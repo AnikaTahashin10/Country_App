@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    --bgColor: hsl(0, 0%, 98%);
+    --fontcolor: black;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.container{ /*idk which container this is cuz there are two of em */
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+    .container:nth-child(1){
+        box-shadow: 0 0 5px rgba(0,0,0.3);
+    }
+
+button{
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.toggle{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.toggle i{
+    padding-right: 5px;
+}
+
+
+.form-control i{
+    width: 400px;
+    box-shadow: 0 0 5px rgba(0,0,0.3);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.form-control input{
+    width: 100%;
+    padding: 17px 14px;
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.form-control i{
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+
+}
+.dropDownCon{
+width: 200px;
+position: relative;
+}
+
+.dropDown{
+width: 100%;
+padding: 17px 14px;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0,0,0.3);
+display: flex;
+justify-content: space-between;
+cursor: pointer;
+font-size: 15px;
+}
+
+.dropDown{
+    letter-spacing: 0.5px;
+}
+.drop{
+position: absolute;
+box-shadow: 0 0 5px rgba(0,0,0.3);
+top: 4rem;
+padding: 17px 14px;
+width: 100%;
+border-radius: 5px;
+background: var(--bgColor);
+}
+
+.countries{
+    padding: 30px;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.country-div{
+    min-height: 35
+    px;
+    box-shadow: 0 0 5px rgba(0,0,0.3);
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* now do styles as much as you want */
+/* add media query for responsive */
+@media screen and (max-width: 576px) {
+    .countries{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
