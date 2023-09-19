@@ -3,54 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rest Countries</title>
-    <!-- the url below is to get icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-       <!--link css file here-->
-       <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+    <title>The world</title>
 </head>
 <body>
-<div class="container">
+    <div class="container">
+    
     <h1>Where in the world?</h1>
-    <button class="toggle"><i class="far fa-moon"></i>Dark Mode </button>
-</div>
-<div class="container">
-    <div class=" form-control">
-        <input type="text" placeholder="search for country">
-        <i class="fas fa-search"></i>
+    <button class="toggle"><i class = "far-fa-moon">Dark Mode</i><button>
     </div>
-    <div class="dropDownCon">
-        <div class="dropDown">
-            <p>Filter By Region</p>
-            <button><i class="fas fa-chevron-down"></i></button>
-        </div>
-        <div class="drop">
-            <p>Africa</p>
-            <p>America</p>
-            <p>Asia</p>
-            <p>Europe</p>
-            <p>Oceania</p>
-        </div>
+    <div class = "container">
+        <input type="text" placeholder="Search">
     </div>
-</div>
-<div class="countires">
-    <div class="country">
-        <div class="country-img">
-            <img src="https://flagcdn.com/za.svg" alt="">
-        </div>
-        <div class="country-info">
-            <h5>Germany</h5>
-            <p><strong>Population:</strong>12334556</p>
-            <p><strong>Region:</strong>Asia</p>
-            <p><strong>Capital:</strong>Berlin</p>
-        </div>
+    
+    <div><label for="filter"></label>
+    <select name="filter" id="filter">
+        <option value="Africa">Africa</option>
+    </select>
     </div>
-</div>
-    <!-- load countries here using js
-    <div class="countries" id="countries"></div> -->
-    <!--link script tags here-->
-    <script src="js/restapi.js"></script>
+
+    <script src="restapi.js"></script>
 </body>
 </html>
