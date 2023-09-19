@@ -1,3 +1,22 @@
+async function getCountry(){
+    const url=await fetch("https://restcountries.com/v3.1/all");
+    const res=await url.json();
+    console.log(res);
+    showCountry
+}
+getCountry()
+function showCountry(data){
+const country=document
+}
+
+
+
+
+
+
+
+
+
 //this is an arrow function
 const loadCountryAPI = () =>{
 // fetch url of rest country from website

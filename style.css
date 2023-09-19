@@ -89,28 +89,44 @@ width: 100%;
 border-radius: 5px;
 background: var(--bgColor);
 }
+.drop p{
+margin: 5px;
+}
 
 .countries{
     padding: 30px;
     max-width: 1240px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 20px;
 }
-.country-div{
-    min-height: 35
-    px;
+.country{
+    min-height: 400px;
     box-shadow: 0 0 5px rgba(0,0,0.3);
     width: 300px;
     border-radius: 5px;
     overflow: hidden;
 }
-img{
+.country-img{
     width: 100%;
     height: 100%;
 }
 
+.country-info{
+    padding: 20px 17px;
+    letter-spacing: 1px;
+}
+
+.country-info h5{
+    padding: 8px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.country-info p>strong{
+    font-weight: 600;
+    
+}
 /* now do styles as much as you want */
 /* add media query for responsive */
 @media screen and (max-width: 576px) {
